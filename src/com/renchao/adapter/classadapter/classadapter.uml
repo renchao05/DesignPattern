@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.renchao.adapter.classadapter</OriginalElement>
+  <nodes>
+    <node x="83.25" y="160.0">com.renchao.adapter.classadapter.Client</node>
+    <node x="19.0" y="0.0">com.renchao.adapter.classadapter.IVoltage5V</node>
+    <node x="174.75" y="0.0">com.renchao.adapter.classadapter.Voltage220V</node>
+    <node x="3.0" y="80.0">com.renchao.adapter.classadapter.Phone</node>
+    <node x="121.0" y="80.0">com.renchao.adapter.classadapter.VoltageAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.renchao.adapter.classadapter.Phone" target="com.renchao.adapter.classadapter.IVoltage5V" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.0" />
+      <point x="-33.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.adapter.classadapter.VoltageAdapter" target="com.renchao.adapter.classadapter.Voltage220V" relationship="GENERALIZATION">
+      <point x="42.25" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.adapter.classadapter.Client" target="com.renchao.adapter.classadapter.VoltageAdapter" relationship="CREATE">
+      <point x="20.75" y="-10.0" />
+      <point x="151.0" y="135.0" />
+      <point x="205.5" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.adapter.classadapter.Client" target="com.renchao.adapter.classadapter.Phone" relationship="CREATE">
+      <point x="-19.25" y="-11.0" />
+      <point x="111.0" y="135.0" />
+      <point x="52.0" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.adapter.classadapter.VoltageAdapter" target="com.renchao.adapter.classadapter.IVoltage5V" relationship="REALIZATION">
+      <point x="-42.25" y="-15.0" />
+      <point x="163.25" y="55.0" />
+      <point x="118.0" y="55.0" />
+      <point x="33.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.45" showDependencies="true" x="224.051724137931" y="87.79310344827587" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
