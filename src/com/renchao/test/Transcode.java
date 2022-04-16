@@ -77,7 +77,7 @@ public class Transcode {
         String[] files = dir.list();// 读取目录下的所有目录文件信息
         for (int i = 0; i < Objects.requireNonNull(files).length; i++) {// 循环，添加文件名或回调自身
             File file = new File(dir, files[i]);
-            if (file.isFile()) {// 如果文件
+            if (file.isFile()/* && file.getName().matches(".+\\.java")*/) {// 如果文件
                 fileNames.add(dir + "\\" + file.getName());// 添加文件全路径名
             } else {// 如果是目录
                 findFileList(file, fileNames);// 回调自身继续查询
