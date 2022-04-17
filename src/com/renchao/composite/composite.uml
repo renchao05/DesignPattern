@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.renchao.composite</OriginalElement>
+  <nodes>
+    <node x="341.08333333333337" y="92.0">com.renchao.composite.Department</node>
+    <node x="629.0833333333334" y="92.0">com.renchao.composite.University</node>
+    <node x="508.08333333333337" y="174.0">com.renchao.composite.Client</node>
+    <node x="439.08333333333337" y="-19.0">com.renchao.composite.OrganizationComponent</node>
+    <node x="501.08333333333337" y="92.0">com.renchao.composite.College</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.renchao.composite.College" target="com.renchao.composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="-3.3333333328755543E-4" y="-15.0" />
+      <point x="555.0830000000001" y="51.5" />
+      <point x="555.0830000000001" y="51.5" />
+      <point x="-3.3333333328755543E-4" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.University" target="com.renchao.composite.OrganizationComponent" relationship="TO_MANY">
+      <point x="-27.5" y="-15.0" />
+      <point x="108.5" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.Client" target="com.renchao.composite.College" relationship="CREATE">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.Client" target="com.renchao.composite.Department" relationship="CREATE">
+      <point x="-47.0" y="0.0" />
+      <point x="522.0" y="189.0" />
+      <point x="522.0" y="148.0" />
+      <point x="411.08333333333337" y="148.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.University" target="com.renchao.composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="-52.08333333333337" y="-14.5" />
+      <point x="640.0" y="92.5" />
+      <point x="84.91666666666663" y="15.5" />
+    </edge>
+    <edge source="com.renchao.composite.Department" target="com.renchao.composite.OrganizationComponent" relationship="GENERALIZATION">
+      <point x="35.5" y="-15.0" />
+      <point x="-108.5" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.College" target="com.renchao.composite.OrganizationComponent" relationship="TO_MANY">
+      <point x="-40.58333333333337" y="-15.0" />
+      <point x="-40.58333333333337" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.Client" target="com.renchao.composite.University" relationship="CREATE">
+      <point x="31.91666666666663" y="-13.5" />
+      <point x="587.0" y="148.0" />
+      <point x="691.0833333333334" y="148.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.composite.Client" target="com.renchao.composite.OrganizationComponent" relationship="DEPENDENCY">
+      <point x="47.0" y="0.0" />
+      <point x="770.5833333333334" y="189.0" />
+      <point x="770.5833333333334" y="-4.0" />
+      <point x="116.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.45" showDependencies="true" x="600.0689655172415" y="85.36206896551724" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
