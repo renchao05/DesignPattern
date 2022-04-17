@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.renchao.flyweight</OriginalElement>
+  <nodes>
+    <node x="99.02134146341461" y="268.0">com.renchao.flyweight.User</node>
+    <node x="35.0" y="166.0">com.renchao.flyweight.ConcreteWebSite</node>
+    <node x="-130.72865853658539" y="257.0">com.renchao.flyweight.Client</node>
+    <node x="58.89634146341463" y="82.0">com.renchao.flyweight.WebSite</node>
+    <node x="-214.4207317073171" y="114.0">com.renchao.flyweight.WebSiteFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.renchao.flyweight.Client" target="com.renchao.flyweight.User" relationship="CREATE">
+      <point x="47.0" y="7.5" />
+      <point x="-42.5" y="-3.5" />
+    </edge>
+    <edge source="com.renchao.flyweight.ConcreteWebSite" target="com.renchao.flyweight.WebSite" relationship="GENERALIZATION">
+      <point x="-9.603658536585371" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.WebSiteFactory" target="com.renchao.flyweight.ConcreteWebSite" relationship="TO_MANY">
+      <point x="56.0" y="15.0" />
+      <point x="-74.42073170731709" y="181.0" />
+      <point x="-90.5" y="0.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.WebSiteFactory" target="com.renchao.flyweight.WebSite" relationship="DEPENDENCY">
+      <point x="-15.0" y="-15.0" />
+      <point x="-145.4207317073171" y="96.5" />
+      <point x="-57.0" y="-0.5" />
+    </edge>
+    <edge source="com.renchao.flyweight.WebSite" target="com.renchao.flyweight.User" relationship="DEPENDENCY">
+      <point x="56.999999999999986" y="0.0" />
+      <point x="233.5" y="97.0" />
+      <point x="233.5" y="283.0" />
+      <point x="42.5" y="0.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.ConcreteWebSite" target="com.renchao.flyweight.User" relationship="DEPENDENCY">
+      <point x="16.021341463414615" y="15.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.Client" target="com.renchao.flyweight.WebSiteFactory" relationship="CREATE">
+      <point x="-5.692073170731703" y="-15.0" />
+      <point x="41.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.Client" target="com.renchao.flyweight.WebSite" relationship="DEPENDENCY">
+      <point x="-47.0" y="0.0" />
+      <point x="-231.9207317073171" y="272.0" />
+      <point x="-231.9207317073171" y="64.5" />
+      <point x="115.89634146341463" y="64.5" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="com.renchao.flyweight.WebSiteFactory" target="com.renchao.flyweight.ConcreteWebSite" relationship="CREATE">
+      <point x="84.0" y="0.5" />
+      <point x="65.25" y="129.5" />
+      <point x="-60.25" y="-15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.15" showDependencies="true" x="39.869565217391255" y="194.0217391304348" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
