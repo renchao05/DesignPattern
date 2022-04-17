@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.renchao.facade</OriginalElement>
+  <nodes>
+    <node x="708.0" y="0.0">com.renchao.facade.Screen</node>
+    <node x="568.0" y="0.0">com.renchao.facade.Projector</node>
+    <node x="447.0" y="0.0">com.renchao.facade.Stereo</node>
+    <node x="282.0" y="0.0">com.renchao.facade.TheaterLight</node>
+    <node x="148.0" y="0.0">com.renchao.facade.Popcorn</node>
+    <node x="316.5" y="153.0">com.renchao.facade.HomeTheaterFacade</node>
+    <node x="371.5" y="229.0">com.renchao.facade.Client</node>
+    <node x="0.0" y="0.0">com.renchao.facade.DVDPlayer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Projector" relationship="DEPENDENCY">
+      <point x="91.5" y="-1.5" />
+      <point x="510.0" y="135.5" />
+      <point x="628.0" y="135.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Screen" relationship="DEPENDENCY">
+      <point x="93.0" y="-13.0" />
+      <point x="511.5" y="160.0" />
+      <point x="759.0" y="160.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.Client" target="com.renchao.facade.HomeTheaterFacade" relationship="CREATE">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Popcorn" relationship="TO_ONE">
+      <point x="-66.0" y="-15.0" />
+      <point x="352.5" y="115.0" />
+      <point x="205.0" y="115.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Screen" relationship="TO_ONE">
+      <point x="102.0" y="7.0" />
+      <point x="774.0" y="175.0" />
+      <point x="15.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Stereo" relationship="TO_ONE">
+      <point x="37.0" y="-14.0" />
+      <point x="456.5" y="154.0" />
+      <point x="-41.0" y="16.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Popcorn" relationship="DEPENDENCY">
+      <point x="-81.0" y="-15.0" />
+      <point x="337.5" y="130.0" />
+      <point x="190.0" y="130.0" />
+      <point x="-15.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.DVDPlayer" relationship="DEPENDENCY">
+      <point x="-102.0" y="8.5" />
+      <point x="49.0" y="176.5" />
+      <point x="-15.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.TheaterLight" relationship="DEPENDENCY">
+      <point x="-51.0" y="-15.0" />
+      <point x="13.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Projector" relationship="TO_ONE">
+      <point x="72.0" y="-15.0" />
+      <point x="490.5" y="115.0" />
+      <point x="613.0" y="115.0" />
+      <point x="-15.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.TheaterLight" relationship="TO_ONE">
+      <point x="-33.0" y="-15.0" />
+      <point x="385.5" y="153.0" />
+      <point x="385.5" y="24.0" />
+      <point x="30.0" y="9.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.Stereo" relationship="DEPENDENCY">
+      <point x="57.0" y="-15.0" />
+      <point x="-22.0" y="15.0" />
+    </edge>
+    <edge source="com.renchao.facade.HomeTheaterFacade" target="com.renchao.facade.DVDPlayer" relationship="TO_ONE">
+      <point x="-99.5" y="-6.5" />
+      <point x="64.0" y="161.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="405.0" y="129.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
