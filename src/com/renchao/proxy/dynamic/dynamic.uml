@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.renchao.proxy.dynamic</OriginalElement>
+  <nodes>
+    <node x="47.25" y="131.0">com.renchao.proxy.dynamic.TeacherDao</node>
+    <node x="47.25" y="-8.0">com.renchao.proxy.dynamic.ITeacherDao</node>
+    <node x="259.25" y="142.5">com.renchao.proxy.dynamic.ProxyFactory</node>
+    <node x="47.25" y="270.0">com.renchao.proxy.dynamic.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.renchao.proxy.dynamic.Client" target="com.renchao.proxy.dynamic.TeacherDao" relationship="CREATE">
+      <point x="6.5" y="-28.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.renchao.proxy.dynamic.Client" target="com.renchao.proxy.dynamic.ProxyFactory" relationship="CREATE">
+      <point x="77.5" y="0.0" />
+      <point x="357.75" y="298.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.renchao.proxy.dynamic.TeacherDao" target="com.renchao.proxy.dynamic.ITeacherDao" relationship="REALIZATION">
+      <point x="0.0" y="-39.5" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.renchao.proxy.dynamic.Client" target="com.renchao.proxy.dynamic.ITeacherDao" relationship="DEPENDENCY">
+      <point x="-77.5" y="0.0" />
+      <point x="29.75" y="298.0" />
+      <point x="29.75" y="31.5" />
+      <point x="-84.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="243.0" y="174.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
