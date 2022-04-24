@@ -14,9 +14,7 @@ public class OrderPizza {
     Pizza pizza;
 
     public OrderPizza() {
-        String orderType = ""; //用户输入的
-        orderType = getType();
-        switch (orderType) {
+        switch (getType()) {
             case "greek":
                 pizza = new GreekPizza();
                 pizza.setName(" 希腊披萨 ");
@@ -44,9 +42,9 @@ public class OrderPizza {
     // 写一个方法，可以获取客户希望订购的披萨种类
     private String getType() {
         try {
-            BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader strIn = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("input pizza 种类:");
-            return strin.readLine();
+            return strIn.readLine();
         } catch (IOException e) {
             e.printStackTrace();
             return "";

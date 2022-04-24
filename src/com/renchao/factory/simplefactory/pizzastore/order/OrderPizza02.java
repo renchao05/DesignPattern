@@ -10,11 +10,8 @@ public class OrderPizza02 {
 	Pizza pizza;
 	// 构造器
 	public OrderPizza02() {
-		String orderType = "";
 		do {
-			orderType = getType();
-			pizza = SimpleFactory.createPizza(orderType);
-
+			pizza = SimpleFactory.createPizza(getType());
 			// 输出pizza
 			if (pizza != null) { // 订购成功
 				pizza.prepare();

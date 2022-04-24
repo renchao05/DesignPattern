@@ -10,10 +10,8 @@ import com.renchao.factory.simplefactory.pizzastore.pizza.Pizza;
 public class OrderPizza {
 	Pizza pizza;
 	public OrderPizza() {
-		String orderType = ""; //用户输入的
 		do {
-			orderType = getType();
-			pizza = SimpleFactory.createPizza(orderType);
+			pizza = SimpleFactory.createPizza(getType());
 			//输出pizza
 			if(pizza != null) { //订购成功
 				pizza.prepare();
@@ -38,5 +36,4 @@ public class OrderPizza {
 			return "";
 		}
 	}
-
 }

@@ -7,7 +7,6 @@ public abstract class Pizza {
 	//准备原材料, 不同的披萨不一样，因此，我们做成抽象方法
 	public abstract void prepare();
 
-	
 	public void bake() {
 		System.out.println(name + " baking;");
 	}
