@@ -2,26 +2,19 @@ package com.renchao.builder.improve;
 
 //产品->Product
 public class House {
-	private String baise;
+	private String Basic;
 	private String wall;
 	private String roofed;
 
 
-	public String getBaise() {
-		return baise;
+	public void setBasic(String basic) {
+		this.Basic = basic;
 	}
-	public void setBaise(String baise) {
-		this.baise = baise;
-	}
-	public String getWall() {
-		return wall;
-	}
+
 	public void setWall(String wall) {
 		this.wall = wall;
 	}
-	public String getRoofed() {
-		return roofed;
-	}
+
 	public void setRoofed(String roofed) {
 		this.roofed = roofed;
 	}
@@ -29,7 +22,7 @@ public class House {
 	@Override
 	public String toString() {
 		return "House{" +
-				"baise='" + baise + '\'' +
+				"Basic='" + Basic + '\'' +
 				", wall='" + wall + '\'' +
 				", roofed='" + roofed + '\'' +
 				'}';
