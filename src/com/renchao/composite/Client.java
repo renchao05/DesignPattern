@@ -9,7 +9,7 @@ public class Client {
 		
 		//创建 学院
 		OrganizationComponent computerCollege = new College("计算机学院", " 计算机学院 ");
-		OrganizationComponent infoEngineerCollege = new College("信息工程学院", " 信息工程学院 ");
+		OrganizationComponent infoCollege = new College("信息工程学院", " 信息工程学院 ");
 		
 		
 		//创建各个学院下面的系(专业)
@@ -18,15 +18,15 @@ public class Client {
 		computerCollege.add(new Department("计算机科学与技术", " 计算机科学与技术是老牌的专业 "));
 		
 		//
-		infoEngineerCollege.add(new Department("通信工程", " 通信工程不好学 "));
-		infoEngineerCollege.add(new Department("信息工程", " 信息工程好学 "));
+		infoCollege.add(new Department("通信工程", " 通信工程不好学 "));
+		infoCollege.add(new Department("信息工程", " 信息工程好学 "));
 		
 		//将学院加入到 学校
 		university.add(computerCollege);
-		university.add(infoEngineerCollege);
+		university.add(infoCollege);
 		
 		//university.print();
-		infoEngineerCollege.print();
+		infoCollege.print();
 	}
 
 }

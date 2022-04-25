@@ -1,5 +1,8 @@
 package com.renchao.composite;
 
+/**
+ * 系，叶子节点
+ */
 public class Department extends OrganizationComponent {
 
 	//没有集合

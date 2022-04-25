@@ -3,10 +3,12 @@ package com.renchao.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-//University 就是 Composite , 可以管理College
+/**
+ * 大学，非叶子节点。就是 Composite , 可以管理 College 和 Department
+ */
 public class University extends OrganizationComponent {
 
-	List<OrganizationComponent> organizationComponents = new ArrayList<OrganizationComponent>();
+	List<OrganizationComponent> organizationComponents = new ArrayList<>();
 
 	// 构造器
 	public University(String name, String des) {

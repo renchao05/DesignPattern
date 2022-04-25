@@ -4,6 +4,13 @@ public abstract class OrganizationComponent {
 
 	private String name; // 名字
 	private String des; // 说明
+
+	//构造器
+	public OrganizationComponent(String name, String des) {
+		super();
+		this.name = name;
+		this.des = des;
+	}
 	
 	protected  void add(OrganizationComponent organizationComponent) {
 		//默认实现
@@ -13,13 +20,6 @@ public abstract class OrganizationComponent {
 	protected  void remove(OrganizationComponent organizationComponent) {
 		//默认实现
 		throw new UnsupportedOperationException();
-	}
-
-	//构造器
-	public OrganizationComponent(String name, String des) {
-		super();
-		this.name = name;
-		this.des = des;
 	}
 
 	public String getName() {

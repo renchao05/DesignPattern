@@ -3,10 +3,13 @@ package com.renchao.composite;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 学院，非叶子节点
+ */
 public class College extends OrganizationComponent {
 
 	//List 中 存放的Department
-	List<OrganizationComponent> organizationComponents = new ArrayList<OrganizationComponent>();
+	List<OrganizationComponent> organizationComponents = new ArrayList<>();
 
 	// 构造器
 	public College(String name, String des) {
@@ -16,7 +19,7 @@ public class College extends OrganizationComponent {
 	// 重写add
 	@Override
 	protected void add(OrganizationComponent organizationComponent) {
-		//  将来实际业务中，Colleage 的 add 和  University add 不一定完全一样
+		//  将来实际业务中，College 的 add 和  University add 不一定完全一样
 		organizationComponents.add(organizationComponent);
 	}
 
