@@ -7,8 +7,7 @@ public class Client {
 		//遥控器
 		RemoteController remoteController = new RemoteController();
 
-		System.out.println("=========使用遥控器操作电视机==========");
-
+		System.out.println("=========使用遥控器操作电灯==========");
 		LightReceiver lightReceiver = new LightReceiver();//创建电灯的对象(接受者)
 		//创建电灯相关的开关命令
 		LightOnCommand lightOnCommand = new LightOnCommand(lightReceiver);
@@ -26,7 +25,6 @@ public class Client {
 		
 		
 		System.out.println("=========使用遥控器操作电视机==========");
-		
 		TVReceiver tvReceiver = new TVReceiver();
 		TVOffCommand tvOffCommand = new TVOffCommand(tvReceiver);
 		TVOnCommand tvOnCommand = new TVOnCommand(tvReceiver);
