@@ -20,7 +20,4 @@ public class Decorator extends Drink {
 		// obj.getDes() 输出被装饰者的信息
 		return des + getPrice() + "元\n\t" + obj.getDes();
 	}
-	
-	
-
 }
