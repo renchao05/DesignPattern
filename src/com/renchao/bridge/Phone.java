@@ -1,21 +1,15 @@
 package com.renchao.bridge;
 
 public abstract class Phone {
-    private final Brand brand;
+    protected final Brand brand;
 
     public Phone(Brand brand) {
         this.brand = brand;
     }
 
-    public void open() {
-        brand.open();
-    }
+    public abstract void open();
 
-    public void close() {
-        brand.close();
-    }
+    public abstract void close();
 
-    public void call() {
-        brand.call();
-    }
+    public abstract void call();
 }

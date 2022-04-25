@@ -8,18 +8,18 @@ public class FoldedPhone extends Phone{
     @Override
     public void open() {
         System.out.println("折叠手机：");
-        super.open();
+        brand.open();
     }
 
     @Override
     public void close() {
         System.out.println("折叠手机：");
-        super.close();
+        brand.close();
     }
 
     @Override
     public void call() {
         System.out.println("折叠手机：");
-        super.call();
+        brand.call();
     }
 }
