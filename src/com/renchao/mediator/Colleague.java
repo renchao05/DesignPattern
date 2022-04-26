@@ -1,4 +1,4 @@
-package com.renchao.mediator.smarthouse;
+package com.renchao.mediator;
 
 //同事抽象类
 public abstract class Colleague {

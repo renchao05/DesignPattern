@@ -1,4 +1,4 @@
-package com.renchao.mediator.smarthouse;
+package com.renchao.mediator;
 
 public abstract class Mediator {
 	//将给中介者对象，加入到集合中

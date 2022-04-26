@@ -1,4 +1,4 @@
-package com.renchao.mediator.smarthouse;
+package com.renchao.mediator;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package com.renchao.mediator.smarthouse;
+package com.renchao.mediator;
 
 //具体的同事类
 public class Alarm extends Colleague {
