@@ -4,22 +4,21 @@ public class CoffeeMachine extends Colleague {
 
 	public CoffeeMachine(Mediator mediator, String name) {
 		super(mediator, name);
-		mediator.Register(name, this);
+		mediator.register(name, this);
 	}
 
 	@Override
-	public void SendMessage(int stateChange) {
-		this.GetMediator().GetMessage(stateChange, this.name);
+	public void send(int stateChange) {
+		mediator.relay(stateChange, this.name);
 	}
 
-	public void StartCoffee() {
-		System.out.println("It's time to startCoffee!");
+	public void start() {
+		System.out.println("开始制作咖啡");
 	}
 
-	public void FinishCoffee() {
-
-		System.out.println("After 5 minutes!");
-		System.out.println("Coffee is ok!");
-		SendMessage(0);
+	public void finish() {
+		System.out.println("5分钟后!");
+		System.out.println("咖啡制作完成!");
+		send(0);
 	}
 }

@@ -14,7 +14,7 @@ public class ConcreteMediator extends Mediator {
 	}
 
 	@Override
-	public void Register(String colleagueName, Colleague colleague) {
+	public void register(String colleagueName, Colleague colleague) {
 		colleagueMap.put(colleagueName, colleague);
 
 		if (colleague instanceof Alarm) {
@@ -33,31 +33,29 @@ public class ConcreteMediator extends Mediator {
 	//1. 根据得到消息，完成对应任务
 	//2. 中介者在这个方法，协调各个具体的同事对象，完成任务
 	@Override
-	public void GetMessage(int stateChange, String colleagueName) {
+	public void relay(int stateChange, String colleagueName) {
 		//处理闹钟发出的消息
 		if (colleagueMap.get(colleagueName) instanceof Alarm) {
 			if (stateChange == 0) {
-				((CoffeeMachine) (colleagueMap.get(interMap
-						.get("CoffeeMachine")))).StartCoffee();
-				((TV) (colleagueMap.get(interMap.get("TV")))).StartTv();
+				//开始制作咖啡
+				((CoffeeMachine) (colleagueMap.get(interMap.get("CoffeeMachine")))).start();
+				//打开电视
+				((TV) (colleagueMap.get(interMap.get("TV")))).startTV();
 			} else if (stateChange == 1) {
-				((TV) (colleagueMap.get(interMap.get("TV")))).StopTv();
+				//关闭电视
+				((TV) (colleagueMap.get(interMap.get("TV")))).stopTV();
 			}
-
+		//处理咖啡机发出的消息
 		} else if (colleagueMap.get(colleagueName) instanceof CoffeeMachine) {
-			((Curtains) (colleagueMap.get(interMap.get("Curtains"))))
-					.UpCurtains();
+			((Curtains) (colleagueMap.get(interMap.get("Curtains")))).upCurtains();
 
-		} else if (colleagueMap.get(colleagueName) instanceof TV) {//如果TV发现消息
+		//处理TV发出的消息
+		} else if (colleagueMap.get(colleagueName) instanceof TV) {
 
+		//处理窗帘发出的消息
 		} else if (colleagueMap.get(colleagueName) instanceof Curtains) {
-			//如果是以窗帘发出的消息，这里处理...
+
 		}
-
-	}
-
-	@Override
-	public void SendMessage() {
 
 	}
 
